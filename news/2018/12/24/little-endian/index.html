@@ -5,7 +5,7 @@
   <title>Little Endian Packet Data</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="generator" content="Jekyll v3.5.2">
+  <meta name="generator" content="Jekyll v3.7.4">
   <link rel="alternate" type="application/rss+xml" title="Ball Aerospace COSMOS News" href="/feed.xml">
   <link rel="alternate" type="application/atom+xml" title="Recent commits to COSMOS's master branch" href="https://github.com/BallAerospace/COSMOS/commits/master.atom">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
@@ -83,6 +83,10 @@
     <option value="">Navigate the blog...</option>
     <option value="/news/">Home</option>
     <optgroup label="v1.x">
+      
+      <option value="/news/2019/06/28/cosmos-4-4-0-released/">Ball Aerospace COSMOS 4.4.0 Released</option>
+      
+      <option value="/news/2019/06/05/protocols/">Protocols</option>
       
       <option value="/news/2018/12/24/little-endian/">Little Endian Packet Data</option>
       
@@ -257,7 +261,7 @@
   </li>
 </ol>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>struct {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>struct {
   unsigned short a:4;
   unsigned short b:8;
   unsigned short c:4;
@@ -266,11 +270,9 @@
 ITEM A 4 4 UINT "struct item a"
 ITEM B 12 8 UINT "struct item b"
 ITEM C 8 4 UINT "struct item c"
-</code></pre>
-</div>
+</code></pre></div></div>
 
-<p>This is hard to visualize, but the structure above gets spread out in a byte array like the following after byte swapping:
-least significant 4 bits of b, 4-bits a, 4-bits c, most significant 4 bits of b</p>
+<p>This is hard to visualize, but the structure above gets spread out in a byte array like the following after byte swapping: least significant 4 bits of b, 4-bits a, 4-bits c, most significant 4 bits of b</p>
 
   </div>
 </article>
@@ -291,6 +293,10 @@ least significant 4 bits of b, 4-bits a, 4-bits c, most significant 4 bits of b<
     <ul>
       
       <li class="">
+        <a href="/news/2019/06/28/cosmos-4-4-0-released/">Version 4.4.0</a>
+      </li>
+      
+      <li class="">
         <a href="/news/2018/08/30/cosmos-4-3-0-released/">Version 4.3.0</a>
       </li>
       
@@ -306,16 +312,20 @@ least significant 4 bits of b, 4-bits a, 4-bits c, most significant 4 bits of b<
         <a href="/news/2018/04/11/cosmos-4-2-2-released/">Version 4.2.2</a>
       </li>
       
-      <li class="">
-        <a href="/news/2017/12/07/cosmos-4-1-1-released/">Version 4.1.1</a>
-      </li>
-      
       <li>
         <a href="/docs/history/">History »</a>
       </li>
     </ul>
     <h4>Other News</h4>
     <ul>
+        
+        
+        
+        
+        <li class="">
+          <a href="/news/2019/06/05/protocols/">Protocols</a>
+        </li>
+        
         
         
         <li class="current">
@@ -576,7 +586,7 @@ least significant 4 bits of b, 4-bits a, 4-bits c, most significant 4 bits of b<
 <footer role="contentinfo">
   <div class="grid wider">
     <div class="unit one-third center-on-mobiles">
-      <p>The contents of this website are &copy;&nbsp;2018 <a href="http://www.ballaerospace.com/" target="_blank">Ball Aerospace</a> under the terms of the <a href="https://github.com/BallAerospace/COSMOS/blob/master/LICENSE.txt" target="_blank">GPLv3&nbsp;License</a>.</p>
+      <p>The contents of this website are &copy;&nbsp;2019 <a href="http://www.ballaerospace.com/" target="_blank">Ball Aerospace</a> under the terms of the <a href="https://github.com/BallAerospace/COSMOS/blob/master/LICENSE.txt" target="_blank">GPLv3&nbsp;License</a>.</p>
       <p>Site design derived from the <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> project documentation which is licensed under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE" target="_blank">MIT License</a>.</p>
     </div>
     <div class="unit two-thirds align-right center-on-mobiles">
