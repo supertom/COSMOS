@@ -1,5 +1,7 @@
 # Deploying COSMOS on Kubernetes
 
+This guide explains how to deploy COSMOS on a Kubernetes cluster.
+
 ## Configuration
 
 1. Set the `DISPLAY` environment variable to the [X Client's](https://en.wikipedia.org/wiki/X_Window_System) IP address and display.
