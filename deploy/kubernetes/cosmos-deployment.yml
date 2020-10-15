@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cosmos-deployment
+  labels:
+    app: cosmos
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cosmos
+  template:
+    metadata:
+      labels:
+        app: cosmos
+    spec:
+      containers:
+      - name: cosmos
+        image: ballaerospace/cosmos
+        env:
+          - name: QT_X11_NO_MITSHM
+            value: "1"
+          - name: DISPLAY
+            value: "192.168.1.253:0"
